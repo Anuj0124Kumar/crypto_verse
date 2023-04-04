@@ -8,11 +8,13 @@ import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCi
 import { useGetCryptoDetailsQuery, useGetCryptoHistoryQuery } from './services/cryptoApi';
 import Loader from './Loader';
 import LineChart from './LineChart';
+import Chart from 'chart.js/auto';
 
 const { Title, Text } = Typography;
 const { Option } = Select;
-
+/* eslint-disable */
 export default function CryptoDetails() {
+ 
   const { coinId } = useParams();
   const [timeperiod, setTimeperiod] = useState('7d');
   const { data, isFetching } = useGetCryptoDetailsQuery(coinId);
