@@ -15,6 +15,8 @@ export default function Exchanges() {
   // Note: To access this endpoint you need premium plan
   if (isFetching) return <Loader />;
 
+  console.log(data);
+
   return (
     <>
       <Row>

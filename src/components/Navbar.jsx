@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="logo-container">
-        <Avatar src="https://images.pexels.com/photos/843700/pexels-photo-843700.jpeg?cs=srgb&dl=pexels-worldspectrum-843700.jpg&fm=jpg" size="large" />
+        <Avatar src="https://images.pexels.com/photos/843700/pexels-photo-843700.jpeg?cs=srgb&dl=pexels-worldspectrum-843700.jpg&fm=jpg" alt="no found" size="large" />
         <Typography.Title level={2} className="logo"><Link to="/">Cryptoverse</Link></Typography.Title>
         <Button className="menu-control-container" onClick={() => setActiveMenu(!activeMenu)}><MenuOutlined /></Button>
       </div>
